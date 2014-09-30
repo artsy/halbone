@@ -5,7 +5,7 @@ An [isomorphic](http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/) 
 ## Example
 
 ````javascript
-var api = require('../lib/halbone')("http://api.com");
+var api = require('halbone')("http://api.com");
 
 api.intercept(function(req) {
   req.withRequestOptions({ headers: 'X-ACCESS-TOKEN': 'foo-token' });
