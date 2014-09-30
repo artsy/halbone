@@ -1,0 +1,37 @@
+{
+  "name": "halbone",
+  "version": "0.0.1",
+  "description": "An isomorphic library for setting up Backbone models from a HAL API",
+  "keywords": [
+    "HAL",
+    "Backbone",
+    "isomorphic"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/artsy/halbone.git"
+  },
+  "author": {
+    "name": "Craig Spaeth",
+    "email": "craigspaeth@gmail.com",
+    "url": "http://craigspaeth.com"
+  },
+  "engines": {
+    "node": ">= 0.10.x"
+  },
+  "scripts": {
+    "test": "mocha test/index"
+  },
+  "dependencies": {
+    "traverson": "git://github.com/craigspaeth/traverson.git",
+    "underscore": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "express": "*",
+    "Backbone": "*",
+    "backbone-super-sync": "*",
+    "body-parser": "*"
+  }
+}
