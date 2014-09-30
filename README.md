@@ -1,6 +1,6 @@
 # halbone
 
-An [isomorphic](http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/) library for setting up Backbone models from a HAL API. Uses Traverson(https://github.com/basti1302/traverson) underneath.
+An [isomorphic](http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/) library for setting up Backbone models from a HAL API. Uses [Traverson](https://github.com/basti1302/traverson) underneath.
 
 ## Example
 
