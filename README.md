@@ -7,7 +7,9 @@ An [isomorphic](http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/) 
 ````javascript
 var api = require('halbone')("http://api.com");
 
-var Comments = Backbone.Collection.extend({});
+var Comments = Backbone.Collection.extend({
+  // ...
+});
 
 api.intercept(function(req) {
   req.withRequestOptions({ headers: 'X-ACCESS-TOKEN': 'foo-token' });
