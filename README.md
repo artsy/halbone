@@ -14,7 +14,7 @@ var Comments = Backbone.Collection.extend({
 api.intercept(function(req) {
   req.withRequestOptions({ headers: 'X-ACCESS-TOKEN': 'foo-token' });
 });
-api.get(Sections, 'posts[0].comments', function(err, comments) {
+api.get(Comments, 'posts[0].comments', function(err, comments) {
   comments.fetch //...
   comments.save //...
 });
