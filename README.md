@@ -22,7 +22,7 @@ api.get(Comments, 'posts[0].comments', function(err, comments) {
 
 ## Options
 
-You may optionall pass an options object as the third arugment...
+You may optionally pass an options object as the third arugment...
 
 ````javascript
 api.get(Post, 'posts[0]',{
