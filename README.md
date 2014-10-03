@@ -37,7 +37,7 @@ api.get(Post, 'posts[0]',{
 
 ### qs & headers
 
-Convenience aliases for Traverson's [qs & headers options](https://github.com/basti1302/traverson#headers-http-basic-auth-oauth-and-whatnot).
+Aliases for Traverson's [qs & headers options](https://github.com/basti1302/traverson#headers-http-basic-auth-oauth-and-whatnot).
 
 ### params
 
