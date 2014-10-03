@@ -77,4 +77,27 @@ describe('halbone', function() {
       });
     });
   });
+
+  it('can bootstrap data and strip out bad urls', function(done) {
+    api.get(Backbone.Model, 'article', {
+      bootstrap: {
+        id: 'foo',
+        title: 'Foo',
+        _links: { self: { href: 'http://localhost:5000/api/articles/1?token=da44e3a6f0163982324a1267' } }
+      }
+    }, function(err, article) {
+      article.get('title').should.equal('Foo');
+      article.url.should.equal('http://localhost:5000/api/articles/1');
+      done();
+    });
+  });
+
+  it('can hydrate a new model from empty bootstrap data', function(done) {
+    api.get(Backbone.Model, 'articles', {
+      bootstrap: {}
+    }, function(err, article) {
+      article.url.should.equal('http://localhost:5000/api/articles');
+      done();
+    });
+  });
 });
