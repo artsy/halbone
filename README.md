@@ -45,7 +45,7 @@ Alias for Traverson's [URI Templates](https://github.com/basti1302/traverson#uri
 
 ### api.bootstrap
 
-It's a common practice to [bootstrap](http://backbonejs.org/#FAQ-bootstrap) data you fetched on the server to the client to avoid making extra requests. By passing the bootstrapped data into the `bootstrap` option, halbone will  immediately return the hydrated model without making extra requests if it finds `_links.self.href`, otherwise be sure to pass in the "root" link of the resource and it'll continue to fetch the model like normal. e.g.
+It's a common practice to [bootstrap](http://backbonejs.org/#FAQ-bootstrap) data you fetched on the server to the client to avoid making extra requests. By passing the bootstrapped data into the `bootstrap` option, halbone will  immediately return the hydrated model without making extra requests if it finds `_links.self.href`, otherwise be sure to pass in the "root" link of the resource, e.g. 'posts', and it'll create a new model with the url injected (so `model.save` can POST to right place. e.g.
 
 ````
 POST_DATA = {}; // A new resource so empty data
