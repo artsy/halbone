@@ -1,5 +1,5 @@
 var Backbone = require('backbone'),
-    api = require('./')("http://artsy.net/api");
+    api = require('./')("https://artsy.net/api");
 
 // Copy & paste the xapp token Artsy gives you. You can find it here:
 // https://developers.artsy.net/start
@@ -8,7 +8,6 @@ var xappToken = '';
 // Models
 var Artwork = Backbone.Model.extend({
 });
-
 var Artists = Backbone.Collection.extend({
 });
 
