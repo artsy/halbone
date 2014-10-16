@@ -20,6 +20,8 @@ api.get(Comments, 'posts[0].comments', function(err, comments) {
 });
 ````
 
+A working example using [Artsy's API](http://developers.artsy.net/) can be found [here](https://github.com/artsy/halbone/blob/master/artsy-example.js).
+
 ## Options
 
 You may optionall pass an options object as the third arugment...
